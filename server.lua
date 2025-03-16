@@ -1,5 +1,7 @@
 ESX = exports['es_extended']:getSharedObject()
 
+print("^2Walter Logging started successfully! Created by: https://github.com/Walterr399^7")
+
 function sendLog(message, src)
     local identifier = "Anon"
     if src and src ~= 0 then
@@ -58,3 +60,9 @@ exports("sendLog", sendLog)
         {name = 'job', help = _U('command_setjob_job'), type = 'string'},
         {name = 'grade', help = _U('command_setjob_grade'), type = 'number'}
     }})]]
+
+AddEventHandler('onResourceStop', function(resourceName)
+    if resourceName == GetCurrentResourceName() then
+        print("^1Walter Logging stopped. Thanks for using it! Created by: https://github.com/Walterr399^7")
+    end
+end)
