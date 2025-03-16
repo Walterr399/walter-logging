@@ -1,6 +1,6 @@
 ESX = exports['es_extended']:getSharedObject()
 
-print("^2Walter Logging started successfully! Created by: https://github.com/Walterr399^7")
+print("^2walter-logging started successfully! Created by: https://github.com/Walterr399^7")
 
 function sendLog(message, src)
     local identifier = "Anon"
@@ -63,6 +63,6 @@ exports("sendLog", sendLog)
 
 AddEventHandler('onResourceStop', function(resourceName)
     if resourceName == GetCurrentResourceName() then
-        print("^1Walter Logging stopped. Thanks for using it! Created by: https://github.com/Walterr399^7")
+        print("^1walter-logging stopped. Thanks for using it! Created by: https://github.com/Walterr399^7")
     end
 end)
