@@ -12,7 +12,7 @@ function sendLog(message, src)
     local embed = {
         {
             ["color"] = Config.Color, 
-            ["title"] = "Walter Logging - Example Roleplay",
+            ["title"] = "Walter Logging - Github",
             ["description"] = message, 
             ["footer"] = {
                 ["text"] = "Speler: " .. identifier,
