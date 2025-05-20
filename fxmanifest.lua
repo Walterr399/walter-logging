@@ -1,12 +1,12 @@
 fx_version "cerulean"
-games { "gta5" }
+game "gta5"
 lua54 "yes"
 
-author "Walter399"
-description "Walter Logging - Github"
-version "1.0"
+author "Walterr399"
+description "Advanced Logging System for fivem."
 
-server_scripts {
-    "config.server.lua",
-    "server.lua"         
-}
+shared_scripts { "@vx_lib/init.lua" }
+server_scripts { "config.server.lua", "server.lua" }
+
+--# Dependency
+dependency "vx_lib"
